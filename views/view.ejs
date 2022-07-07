@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <script src="/static/script.js"></script>
+        <link rel="stylesheet" href="/static/style.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Index of <%= index %></title>
+    </head>
+    
+    <body>
+        <div id="floating">
+    
+        </div>
+        <div class="flex">
+            <div id="left-side">
+                <table id="table">
+                    <thead>
+                        <tr class="white">
+                            <td>Name</td>
+                            <td class="size-prop">Size</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table_tbody">
+                        <%- include("directory_fragment.ejs") %> 
+                    </tbody>
+                </table>
+            </div>
+            <div id="images">
+                <%- include("images_fragment.ejs") %> 
+            </div>
+        </div>
+    </body>
+</html>

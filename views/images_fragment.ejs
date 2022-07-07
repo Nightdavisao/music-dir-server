@@ -1,0 +1,5 @@
+<% listing.filter(item => item.name.match(/\.(png|jpg|gif|jpeg)$/i)).forEach(item => { %>
+    <div>
+        <img class="image" src="<%= encodeURI(item.path) %>" alt="<%= item.name %>">
+    </div>
+<% }) %>

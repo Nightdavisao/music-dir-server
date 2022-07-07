@@ -1,0 +1,60 @@
+#table {
+    width: 100%;
+    font-family: monospace;
+}
+
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+#left-side {
+    flex: 1 0 50em;
+}
+
+.white {
+    color: white;
+    font-size: 14px;
+}
+
+.flex {
+    margin-bottom: 8em;
+    display: flex;
+    display: -ms-flexbox;
+}
+
+#floating {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    background-color: rgb(209, 169, 176);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.image {
+    width: 100%;
+}
+
+#player {
+    width: 100%;
+}
+
+#current-track {
+    background-color: rgb(209, 169, 176);
+}
+
+.size-prop {
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 950px) {
+    .flex {
+        flex-direction: column;
+    }
+
+    #left-side {
+        flex: 0 0 0;
+    }
+}
